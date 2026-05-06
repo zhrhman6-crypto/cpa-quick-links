@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الروابط السريعة للموظف</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #1a202c;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #2d3748;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden; /* لمنع اللون من الخروج عن الزوايا المنحنية */
+            border: 1px solid #e2e8f0;
+        }
+
+        /* اللون الخفيف في أعلى المربع */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px; /* سمك الشريط العلوي */
+            background-color: #3182ce; /* لون افتراضي (أزرق) */
+            opacity: 0.8;
+        }
+
+        /* تغيير ألوان الأشرطة العلوية لكل مربع لإضافة حيوية (اختياري) */
+        .card:nth-child(1)::before { background-color: #48bb78; } /* أخضر */
+        .card:nth-child(2)::before { background-color: #ed8936; } /* برتقالي */
+        .card:nth-child(3)::before { background-color: #4299e1; } /* أزرق */
+        .card:nth-child(4)::before { background-color: #9f7aea; } /* بنفسجي */
+        .card:nth-child(5)::before { background-color: #f56565; } /* أحمر */
+        .card:nth-child(6)::before { background-color: #38b2ac; } /* تركوازي */
+        .card:nth-child(7)::before { background-color: #667eea; } /* نيلي */
+        .card:nth-child(8)::before { background-color: #ecc94b; } /* أصفر */
+        .card:nth-child(9)::before { background-color: #a0aec0; } /* رمادي */
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+            background-color: #f7fafc;
+            color: #1a365d;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                grid-template-columns: 1fr 1fr; /* مربعين بجانب بعض في الجوال */
+                gap: 15px;
+            }
+            .card {
+                height: 110px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>تطبيق الروابط السريعة للموظف</h1>
+
+    <div class="container">
+        <a href="https://hema.cpa.gov.om/jw/web/login" target="_blank" class="card">حمى</a>
+
+        <a href="https://e-mawred.mol.gov.om/OA_HTML/AppsLocalLogin.jsp" target="_blank" class="card">مورد</a>
+
+        <a href="https://adfs.wosool.gov.om/adfs/ls/idpinitiatedsignon.aspx?SAMLRequest=jVNdr9owDP0rUd77cYHLtgiQGOwDiUEFvXvYyxRSt0RK4y5Ogf37peUyoWlDe4pk%2B9jHxycTkrVpxLz1R7uDHy2QZ5faWBJ9YspbZwVK0iSsrIGEV2I%2F%2F7IWgzgVjUOPCg2%2FgzxGSCJwXqPlbLWc8u3mw3r7abX5%2FvRmWJYjKaNBUapo9CwPkUzfDiIJz%2BnToHgCdRhz9hUcBeyUh1ahAVELK0teWh9C6WAcpaMoHefpSAyHYvTuG2eZw5MuwG0CkynfwLkCy%2FZY%2BrN0wHJQR4sGKw3E1r6IOVsGAbSVvh9z9L4hkSSyKCk%2BIyGauMJTjHUfSgwlumi01V5LDwXpyqKNJTWXfnKvzXttC22rx7IcrkUkPud5FmXbfc7Z%2FCbVAi21Nbg9uJNW8LJb3zFrmj%2BI2X5HIkz24Ro7oCbAgc8m3XFEr5mb%2FQ%2B8q58k96jJ1Sudlqtlhkarn%2Bwjulr6K6HQkNQRaklx8AOhbGJ0VaKM1DUlL9kmLGUMnhcOglxT7l0LnCW3vq%2F2g6I3Y9jaw8WzBdaNdJq6e8BFKn9b5b5qYYKxdlDOHnpPCdXVhXAWnjO6ojsSqDAyd9IGpZx%2F3fivza%2B5fxD9nb3%2FSrNf&RelayState=http%3A%2F%2Fapp.wosool.gov.om%2Fnewgensso%2Fnewgensso%2Fsaml&loginToRp=http%3A%2F%2Fapp.wosool.gov.om%2Fnewgensso%2Fnewgensso%2Fsaml" target="_blank" class="card">وصول</a>
+
+        <a href="https://ejada.gov.om/" target="_blank" class="card">إجادة</a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQzL1CcC1UiyYSlGGcmw5SQ-m2cqN00O76ByamAs1xLxKdoQ/viewform" target="_blank" class="card">طلب مواد</a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3F-gcfLp5_754h8GzSIX3-aHwXKBUy-1xWPCA3evUfYDDnQ/viewform" target="_blank" class="card">إجازتي</a>
+
+        <a href="https://attendance.cpa.gov.om/DigiHR/#/" target="_blank" class="card">نظام الحضور والانصراف</a>
+
+        <a href="https://nooribri.github.io/remote-work-app-2025/" target="_blank" class="card">العمل عن بعد للموظفين</a>
+
+        <a href="https://nooribri.github.io/remote-work-app2025/" target="_blank" class="card">العمل عن بعد لرؤساء الأقسام</a>
+
+        <a href="https://intranet.cpa.gov.om/ar/Pages/home.aspx" target="_blank" class="card"> البوابة الداخلية</a>
+
+        <a href="
+https://script.google.com/macros/s/AKfycbzEt8mdlPCNvNEe-pZ6OnfR9040X1E5nKdJ-1rk44Omxf3grazo5OkyiY8woqzLWdOx/exec
+" target="_blank" class="card"> الهواتف الداخلية</a>
+    </div>
+
+</body>
+</html>
